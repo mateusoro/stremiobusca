@@ -1,0 +1,25 @@
+{
+  "name": "stremiobusca",
+  "version": "1.0.0",
+  "description": "A barebones Node.js app using [Express 4](http://expressjs.com/).",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "localtunnel": "^1.9.1",
+    "magnet-uri": "^5.1.7",
+    "request": "^2.85.0",
+    "sqlite-sync": "^0.3.8",
+    "stremio-addons": "^2.8.14",
+    "sync-request": "^6.1.0",
+    "tableify": "^1.1.0",
+    "torrent-name-parser": "^0.6.5",
+    "video-name-parser": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
