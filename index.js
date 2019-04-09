@@ -17,11 +17,10 @@ var ourImdbIds3 = [];
  */
 //carregar ("http://hidratorrent.com/dragon-ball-super-3-temporada-completa-torrent");
 
-var localtunnel = require('localtunnel');
 
-var tunnel = localtunnel(7001, {subdomain: 'stremiobusca'}, function (err, tunnel) {
-    l(tunnel.url);
-});
+var shell = require('shelljs');
+var cmd = 'ssh -R stremiobusca:80:localhost:7001 serveo.net -o StrictHostKeyChecking=no';
+shell.exec(cmd,{async:true});
 
 var server = require("http").createServer(function (req, res) {
 
